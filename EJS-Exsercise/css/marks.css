@@ -1,0 +1,25 @@
+html{
+    background-image: url("https://images.unsplash.com/photo-1547127796-06bb04e4b315?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+}
+table {
+    border: 1px solid rgb(255, 0, 106);
+    width: 100%;
+    margin-top: 150px;
+    font-family: 'Potta One', cursive;
+  }
+  th{
+    border: 1px solid rgb(255, 0, 106);
+    text-align: left;
+    padding: 8px;
+    color:rgb(255, 0, 106);
+  }
+  td {
+    border: 1px solid rgb(255, 0, 106);
+    text-align: left;
+    padding: 8px;
+    color:black;
+  }
+  
+  tr:nth-child(even) {background-color: rgb(255, 0, 106);}

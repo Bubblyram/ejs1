@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>user</title>
+        <link rel="stylesheet" href="/css/marks.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>RollNo</th>
+                <th>DateOfExam</th>
+                <th>Mark1</th>
+                <th>Mark2</th>
+                <th>Mark3</th>
+                <th>Average_Score</th>
+            </tr>
+            <% if(userdata.length !=0){%>
+                <%var i=1;%>
+                <%userdata.forEach(function(data){%>
+            <tr>
+                <td><%=i;%></td>
+                <td><%=data.name %></td>
+                <td><%=data.rollno %></td>
+                <td><%=data.dateofexam %></td>
+                <td><%=data.m1 %></td>
+                <td><%=data.m2 %></td>
+                <td><%=data.m3 %></td>
+                <td><%=Math.round((data.m1+data.m2+data.m3)/3)%></td>
+            </tr>
+            <%i++;})%>
+            <%}else{%>
+                <tr>
+                    <td colspan="8">No Data Found</td>
+                </tr>
+                <%}%>
+        </table>
+    </body>
+</html>
